@@ -1,2 +1,2 @@
 # Weather-Forecast-Python-Desktop-Application
-Weather Forecast Python Desktop Application using Weather API and Text-To-Speech support.
+Weather Forecast Python Desktop Application with Text-To-Speech support using Weather API and tkinter for User Interface.
