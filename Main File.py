@@ -43,7 +43,7 @@ E1.place(x=250,y=100)
 def doit():
     
     fo = open("d.txt", "w")
-    url = r'https://api.openweathermap.org/data/2.5/weather?q={}&appid=b5473a745c4f03efeac0b648b695df24'.format(str(city.get()))
+    url = r'https://api.openweathermap.org/data/2.5/weather?q={}&appid= # insert API Key'.format(str(city.get()))
 
     res = requests.get(url)
 
@@ -78,7 +78,7 @@ def doit():
 
     from pygame import mixer # Load the required library
     mixer.init()
-    mixer.music.load('C:/Users/Pract/Desktop/Study Material/Computer Science/Semester-II/Data Structures Project-2019/d.mp3')
+    mixer.music.load('#path to audio file')
     mixer.music.play()
     
 sub1=Button(root, text="GO", command=doit)
@@ -100,7 +100,7 @@ def doit2():
     fo1=open("max.txt", "w")
     go=open("min.txt", "w")
     if (days.get() in range(0, 5)):
-        url = r'https://api.openweathermap.org/data/2.5/forecast?q={}&appid=b5473a745c4f03efeac0b648b695df24'.format(city.get())
+        url = r'https://api.openweathermap.org/data/2.5/forecast?q={}&appid= #API Key'.format(city.get())
         res = requests.get(url)
         data = res.json()
         for i in range(0, days.get()):
@@ -245,7 +245,7 @@ counter = 0
 def doit3():
         fo2=open("f.txt","w")
         global counter
-        url = r'https://api.openweathermap.org/data/2.5/forecast?q={}&appid=b5473a745c4f03efeac0b648b695df24'.format(city.get())
+        url = r'https://api.openweathermap.org/data/2.5/forecast?q={}&appid= #API key'.format(city.get())
         res = requests.get(url)
         data = res.json()
         index = 0
